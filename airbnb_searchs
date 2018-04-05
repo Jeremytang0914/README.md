@@ -1,0 +1,7 @@
+SELECT id_user,
+count(id_user) as Times_used
+FROM datasets.airbnb_searches
+Where ds = '2014-10-01'
+group by id_user
+order by count(*) DESC
+How many nights are most people staying on 2014-10-01?
